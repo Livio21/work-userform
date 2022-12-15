@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+    <title>User Form</title>
+  </head>
+  <body>
+    <div class="container">
+      <form
+        id="userForm"
+        onsubmit="event.preventDefault();addUser()"
+        autocomplete="off"
+      >
+        <input
+          type="text"
+          name="name"
+          id="nameInput"
+          placeholder="Emri: "
+          required
+        />
+        <select name="role" id="roleInput">
+          <option value="">Zgjidh rolin</option>
+          </option>
+          <option value="Student">Student</option>
+          <option value="Mesues">Mesues</option>
+        </select>
+        <button type="submit" id="addButton">+ Shto</button>
+      </form>
+      <span style="color: red;" id="warning"></span>
+      <hr>
+      <div class="searchBar">
+        <input
+          type="text"
+          id="search"
+          placeholder="Kerko..."
+          oninput="displayUsers()"
+        />
+      </div>
+      <div id="users"></div>
+    </div>
+    <footer class="end">
+      <span>Done by Livio Macaj</span>
+    </footer>
+  </body>
+</html>
