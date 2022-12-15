@@ -96,7 +96,7 @@ body {
 #role {
   font-weight: bold;
 }
-#users {
+.users {
   display: flex;
   flex-direction: column;
   gap: 10px;
